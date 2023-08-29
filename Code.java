@@ -7,29 +7,29 @@ public class CalculadoraBasica {
 
         System.out.println("Bem-vindo à Calculadora Básica!");
         System.out.print("Digite o primeiro número: ");
-        double numero1 = scanner.nextDouble();
+        double valor1 = scanner.nextDouble();
 
         System.out.print("Digite o operador (+, -, *, /): ");
         char operador = scanner.next().charAt(0);
 
         System.out.print("Digite o segundo número: ");
-        double numero2 = scanner.nextDouble();
+        double valor2 = scanner.nextDouble();
 
         double resultado = 0.0;
 
         switch (operador) {
             case '+':
-                resultado = numero1 + numero2;
+                resultado = valor1 + valor2;
                 break;
             case '-':
-                resultado = numero1 - numero2;
+                resultado = valor1 - valor2;
                 break;
             case '*':
-                resultado = numero1 * numero2;
+                resultado = valor1 * valor2;
                 break;
             case '/':
-                if (numero2 != 0) {
-                    resultado = numero1 / numero2;
+                if (valor2 != 0) {
+                    resultado = valor1 / valor2;
                 } else {
                     System.out.println("Erro: Divisão por zero!");
                     System.exit(1); // Encerra o programa com código de erro 1
